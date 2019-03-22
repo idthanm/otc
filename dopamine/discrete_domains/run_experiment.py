@@ -142,7 +142,7 @@ class Runner(object):
                logging_file_prefix='log',
                log_every_n=1,
                num_iterations=200,
-               training_steps=250000,
+               training_steps=1,
                evaluation_steps=125000,
                max_steps_per_episode=27000):
     """Initialize the Runner object in charge of running a full experiment.
