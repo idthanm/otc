@@ -25,7 +25,7 @@ if __name__ == '__main__':
     parser.set_defaults(docker_training=False)
     args = parser.parse_args()
 
-    env = ObstacleTowerEnv(args.environment_filename, docker_training=args.docker_training)
+    env = ObstacleTowerEnv(args.environment_filename, docker_training=args.docker_training, realtime_mode=True)
     if env.is_grading():
         episode_reward = run_evaluation(env)
     else:
